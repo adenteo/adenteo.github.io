@@ -105,8 +105,8 @@ body {
 
 .home-right {
     float: left;
-    width: 58%;
-    margin-left: 2%;
+    width: 55%;
+    margin: 30px;
 }
 
 .home-right h1 {
