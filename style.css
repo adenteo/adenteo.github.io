@@ -124,7 +124,7 @@ body {
     color: #ffffff;
     font-size: 70px;
     opacity: 0;
-    animation: show 0.5s forwards, pop-word 4s forwards;
+    animation: show 0.1s forwards, pop-word 6s forwards;
     animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
     transform: rotateX(120deg);
     transform-origin: 50% 100%;
