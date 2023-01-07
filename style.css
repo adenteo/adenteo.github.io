@@ -156,6 +156,7 @@ body {
     font-family: montserrat-thin;
     color: rgb(223, 223, 223);
     font-size: 18px;
+    line-height: 2em;
 }
 
 .home img {
@@ -177,9 +178,47 @@ body {
     span {
         display: none;
     }
+
+    .home-right h1 {
+        font-size: 50px;
+    }
+
     .home-right {
         width: 80%;
         margin: 0 10% 0 10%;
-        overflow: hidden;
+    }
+}
+
+/* CSS */
+.button-1 {
+    margin-top: 4%;
+    font-family: montserrat-semibold;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+    cursor: pointer;
+    border: 2px solid;
+    padding: 0.75em 0.75em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
+        4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-1:hover {
+    transform: translateY(2px);
+}
+
+.button-1:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+@media (min-width: 768px) {
+    .button-1 {
+        padding: 0.75em 0.75em;
     }
 }
