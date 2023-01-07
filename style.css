@@ -172,7 +172,7 @@ body {
     font-family: montserrat-thin;
     color: rgb(223, 223, 223);
     font-size: 18px;
-    line-height: 2em;
+    line-height: 1.75em;
 }
 
 .home img {
@@ -189,11 +189,11 @@ body {
     .home-left img {
         max-width: 100%;
         height: auto;
-        width: 200px;
+        width: 150px;
     }
 
     .home-right h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .home-right h2 {
@@ -212,7 +212,7 @@ body {
     }
 
     .home-left {
-        height: 23vh;
+        height: 20vh;
         text-align: left;
     }
 
