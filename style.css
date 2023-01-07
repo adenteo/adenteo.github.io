@@ -84,13 +84,11 @@ body {
 .home_container {
     display: flex;
     width: 90vw;
-    border: 4px solid purple;
 }
 
 .home-left {
     text-align: center;
     width: 30vw;
-    border: 1px solid wheat;
 }
 
 .home-left img {
@@ -102,7 +100,6 @@ body {
 .home-right {
     width: 60vw;
     padding: 2%;
-    border: 1px solid wheat;
 }
 
 .home-left h1 {
