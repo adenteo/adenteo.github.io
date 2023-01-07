@@ -93,6 +93,7 @@ body {
 
 .home-right {
     width: 60vw;
+    padding: 2%;
 }
 
 .home-left h1 {
@@ -183,10 +184,16 @@ body {
         font-size: 50px;
     }
 
+    .home-left,
+    .home-right {
+        width: 80vw;
+        margin: 0;
+        padding: 0;
+    }
+
     .home_container {
         display: flex;
         flex-direction: column;
-        height: 100vh;
     }
 }
 
