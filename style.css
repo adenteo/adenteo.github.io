@@ -240,11 +240,9 @@ html {
     #navbar-name {
         display: none;
     }
-
-    .navbar-container {
-        display: block;
+    #navbar-projects {
+        margin-top: 6.5vh;
     }
-
     .navbar-navigation {
         display: flex;
         flex-direction: column;
