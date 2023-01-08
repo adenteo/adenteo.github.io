@@ -2,66 +2,10 @@
 <html lang="en">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script>
-        // window.onscroll = function () {
-        //     scrollFunction();
-        // };
-
-        // function scrollFunction() {
-        //     if (
-        //         document.body.scrollTop > 0 ||
-        //         document.documentElement.scrollTop > 0
-        //     ) {
-        //         document.getElementById("header").style.position = "fixed";
-        //         document.getElementById("header").style.boxShadow =
-        //             "0 0 0.5em rgba(0, 0, 0, 0.5);";
-        //     } else {
-        //         document.getElementById("header").style.position = "relative";
-        //     }
-        // }
-        $(document).ready(function () {
-            $("#navbar-projects").click(function () {
-                $("html, body").animate(
-                    {
-                        scrollTop: $("#projects").offset().top,
-                    },
-                    750
-                );
-                return false;
-            });
-        });
-        $(document).ready(function () {
-            $("#navbar-name").click(function () {
-                $("html, body").animate(
-                    {
-                        scrollTop: $("#home").offset().top,
-                    },
-                    750
-                );
-                return false;
-            });
-        });
-        $(document).ready(function () {
-            $("#navbar-experience").click(function () {
-                $("html, body").animate(
-                    {
-                        scrollTop: $("#experience").offset().top,
-                    },
-                    750
-                );
-                return false;
-            });
-        });
-        $(document).ready(function () {
-            $("#navbar-contact").click(function () {
-                $("html, body").animate(
-                    {
-                        scrollTop: $("#contact").offset().top,
-                    },
-                    750
-                );
-                return false;
-            });
-        });
+        function toggleMenu() {
+            var element = document.getElementById("navbar-navigation");
+            element.classList.toggle("collapse");
+        }
     </script>
     <head>
         <meta charset="UTF-8" />
@@ -73,20 +17,36 @@
     <body>
         <header class="header" id="header">
             <nav class="navbar-container">
-                <a href="/#home" class="navbar-main" id="navbar-name">
+                <a href="#home" class="navbar-main" id="navbar-name">
                     <span>Aden Teo</span>
                 </a>
-                <div class="navbar-navigation">
+                <div
+                    class="navbar-navigation-menu"
+                    id="navbar-navigation-menu"
+                    onclick="toggleMenu()"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                    >
+                        <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                        />
+                    </svg>
+                </div>
+                <div class="navbar-navigation collapse" id="navbar-navigation">
                     <div class="navbar-item" id="navbar-projects">
-                        <a href="/#projects">Projects</a>
+                        <a href="#projects">Projects</a>
                     </div>
                     <div class="navbar-item" id="navbar-experience">
-                        <a href="/#experience">Experience</a>
+                        <a href="#experience">Experience</a>
                     </div>
                     <div class="navbar-item" id="navbar-contact">
-                        <a href="/#contact">Contact</a>
+                        <a href="#contact">Contact</a>
                     </div>
                 </div>
+
                 <div class="navbar-logos">
                     <div class="navbar-logo" id="navbar-logo-linkedin">
                         <svg
@@ -136,8 +96,8 @@
                         </h3>
                         <button
                             class="button-1"
-                            role="button"
-                            href="/#projects"
+                            id="viewProjects"
+                            onclick="window.location.href='#projects'"
                         >
                             View my projects
                         </button>

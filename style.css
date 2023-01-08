@@ -3,9 +3,8 @@ body {
     margin: 0;
 }
 
-html:not([data-scroll="10000"]) header {
-    position: fixed;
-    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+html {
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -238,6 +237,41 @@ html:not([data-scroll="10000"]) header {
 }
 
 @media screen and (max-width: 1000px) {
+    #navbar-name {
+        display: none;
+    }
+
+    .navbar-container {
+        display: block;
+    }
+
+    .navbar-navigation {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition: max-height 0.35s ease-out;
+        max-height: 150px;
+    }
+
+    .navbar-navigation.collapse {
+        max-height: 0;
+    }
+
+    .navbar-navigation-menu {
+        z-index: 2;
+        position: absolute;
+        right: 2rem;
+        width: 20px;
+        fill: white;
+        margin: 1%;
+        cursor: pointer;
+        top: 7%;
+    }
+
+    .navbar-logos {
+        display: none;
+    }
+
     .home-left h1,
     .home-left h2,
     .home-left span {
