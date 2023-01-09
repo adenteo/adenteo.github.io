@@ -42,6 +42,20 @@ html {
     src: url(./fonts/Montserrat-Thin.ttf);
 }
 
+@font-face {
+    font-family: FiraMono-Bold;
+    src: url(./fonts/FiraMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: FiraMono-Medium;
+    src: url(./fonts/FiraMono-Medium.ttf);
+}
+@font-face {
+    font-family: FiraMono-Regular;
+    src: url(./fonts/FiraMono-Regular.ttf);
+}
+
 .navbar-top {
     /* border: 1px solid pink; */
     display: flex;
@@ -130,9 +144,9 @@ html {
     align-items: center;
 }
 
-#projects {
+/* #projects {
     background-color: rgb(26, 26, 26);
-}
+} */
 
 #navbar-name {
     cursor: pointer;
@@ -379,3 +393,105 @@ html {
 /* .information h1 {
     border: 1px solid white;
 } */
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 85vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.left-slide {
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.left-slide h1 {
+    font-family: montserrat-extrabold;
+    padding: 15px;
+    text-align: center;
+}
+
+.left-slide p {
+    font-family: "FiraMono-Regular";
+    padding: 15px;
+    text-align: center;
+}
+
+.project-description {
+    justify-content: center;
+}
+
+.left-slide > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 60%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.right-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.right-slide img {
+    position: relative;
+    margin-top: 30vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+}
+
+button:hover {
+    color: #222;
+}
+
+button:focus {
+    outline: none;
+}
+
+.slider-container .action-buttons button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+}
+
+.slider-container .action-buttons .down-button {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translateY(100%);
+}
+
+.slider-container .action-buttons .up-button {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
