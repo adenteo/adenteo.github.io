@@ -1,12 +1,14 @@
 body {
     background-color: #282828;
     margin: 0;
+    overscroll-behavior-y: none;
 }
 
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: auto;
+    overscroll-behavior-y: none;
 }
 
 .navbar {
