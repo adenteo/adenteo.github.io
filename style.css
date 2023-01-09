@@ -255,7 +255,9 @@ html {
         flex-direction: column;
         align-items: flex-start;
     }
-
+    .navbar-logos {
+        margin-top: 1vh;
+    }
     #navbar-name {
         display: none;
     }
