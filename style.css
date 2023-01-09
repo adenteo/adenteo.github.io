@@ -259,7 +259,9 @@ html {
     #navbar-name {
         display: none;
     }
-
+    #navbar-projects {
+        margin-top: 2vh;
+    }
     .navbar-navigation {
         display: flex;
         flex-direction: column;
@@ -278,8 +280,8 @@ html {
         right: 2rem;
         width: 20px;
         fill: white;
-        margin: 1%;
         cursor: pointer;
+        margin-top: 2vh;
     }
 
     /* .navbar-logos {
