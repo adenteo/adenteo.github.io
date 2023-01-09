@@ -440,9 +440,13 @@ html {
     position: absolute;
     top: 0;
     left: 40%;
-    width: 60%;
+    width: 50%;
     transition: transform 0.5s ease-in-out;
 }
+
+/* #test {
+    display: flex;
+} */
 
 .right-slide > div {
     background-repeat: no-repeat;
@@ -450,19 +454,20 @@ html {
     background-position: center center;
     height: 100%;
     width: 100%;
-    text-align: center;
 }
 
 .right-slide img {
-    position: relative;
-    margin-top: 30vh;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
-button {
-    background-color: #fff;
+.action-buttons button {
+    background-color: rgb(48, 48, 48);
     border: none;
     color: #aaa;
     cursor: pointer;
@@ -471,7 +476,7 @@ button {
 }
 
 button:hover {
-    color: #222;
+    color: rgb(255, 255, 255);
 }
 
 button:focus {
@@ -480,8 +485,8 @@ button:focus {
 
 .slider-container .action-buttons button {
     position: absolute;
-    left: 35%;
-    top: 50%;
+    left: 30%;
+    top: 45%;
     z-index: 100;
 }
 
