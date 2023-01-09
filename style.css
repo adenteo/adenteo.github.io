@@ -199,26 +199,6 @@ html {
     }
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: rgb(255, 255, 255);
-    }
-}
-
 .home-right h2 {
     font-family: montserrat-semibold;
     color: rgb(223, 223, 223);
@@ -236,19 +216,56 @@ html {
     border-radius: 200px;
 }
 
+.main-shadow {
+    position: absolute;
+    width: 100vw;
+    height: 1000px;
+    opacity: 0.1;
+    background: #5653e8;
+    background: linear-gradient(
+        180deg,
+        #65579c 0%,
+        #150752 35%,
+        rgb(26, 26, 26) 100%
+    );
+    pointer-events: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    .main-shadow {
+        background: radial-gradient(
+            1134.35% 1033.06% at 82.95% 96.13%,
+            rgba(0, 0, 0, 0) 0%,
+            #150752 25.52%
+        );
+        opacity: 0.5;
+        top: -220px;
+        filter: blur(219px);
+        -webkit-filter: blur(219px);
+        -moz-filter: blur(219px);
+        transform: matrix(-0.99, -0.12, -0.12, 0.99, 0, 0);
+        z-index: 0;
+        overflow: hidden;
+    }
+}
+
 @media screen and (max-width: 1000px) {
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     #navbar-name {
         display: none;
     }
-    #navbar-projects {
-        margin-top: 6.5vh;
-    }
+
     .navbar-navigation {
         display: flex;
         flex-direction: column;
         overflow: hidden;
         transition: max-height 0.35s ease-out;
-        max-height: 150px;
+        max-height: 200px;
     }
 
     .navbar-navigation.collapse {
@@ -263,12 +280,11 @@ html {
         fill: white;
         margin: 1%;
         cursor: pointer;
-        top: 7%;
     }
 
-    .navbar-logos {
+    /* .navbar-logos {
         display: none;
-    }
+    } */
 
     .home-left h1,
     .home-left h2,
