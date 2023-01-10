@@ -420,11 +420,12 @@ html {
 .projects-section-left h1 {
     font-family: montserrat;
     color: rgb(214, 214, 214);
+    font-size: 2vw;
 }
 
 .projects-section-left p {
     font-family: montserrat-thin;
-    font-size: 20px;
+    font-size: 1.5vw;
     line-height: 2em;
     color: white;
 }
