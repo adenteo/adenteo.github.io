@@ -392,13 +392,6 @@ html {
     left: 5px;
 }
 
-@media screen and (max-width: 1000px) {
-    .button-1 {
-        font-size: 15px;
-        padding: 0.75em 0.75em;
-    }
-}
-
 /* #projects {
     justify-content: start;
     align-items: flex-start;
@@ -468,4 +461,39 @@ html {
 
 #carousel-container {
     height: 90vh;
+}
+
+.carousel-item {
+    transition: transform 0.3s ease, opacity 0.5s ease-out;
+}
+
+@media screen and (max-width: 1000px) {
+    .button-1 {
+        font-size: 15px;
+        padding: 0.75em 0.75em;
+    }
+
+    .projects-section-container {
+        flex-direction: column;
+    }
+
+    .projects-section-left {
+        height: 25vh;
+        width: 80vw;
+        text-align: center;
+    }
+
+    .projects-section-right {
+        height: 75vh;
+        width: 80vw;
+        margin: 0;
+        padding: 3%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container,
+    .container-sm {
+        max-width: none;
+    }
 }
