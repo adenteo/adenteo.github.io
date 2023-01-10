@@ -498,3 +498,8 @@ html {
         max-width: none;
     }
 }
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 5%;
+}
