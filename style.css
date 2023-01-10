@@ -420,7 +420,6 @@ html {
 .projects-section-left h1 {
     font-family: montserrat;
     color: rgb(214, 214, 214);
-    font-size: 2vw;
 }
 
 .projects-section-left p {
@@ -489,6 +488,19 @@ html {
         width: 80vw;
         margin: 0;
         padding: 3%;
+        padding-top: 25%;
+    }
+    .projects-section-left h1 {
+        font-family: montserrat;
+        color: rgb(214, 214, 214);
+        font-size: 25px;
+    }
+
+    .projects-section-left p {
+        font-family: montserrat-thin;
+        font-size: 15px;
+        line-height: 2em;
+        color: white;
     }
 }
 
