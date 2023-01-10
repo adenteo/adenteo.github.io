@@ -473,6 +473,10 @@ html {
         padding: 0.75em 0.75em;
     }
 
+    .button-1.projects {
+        font-size: 10px;
+    }
+
     .projects-section-container {
         flex-direction: column;
     }
