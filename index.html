@@ -8,6 +8,17 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"
+        ></script>
         <link type="text/css" rel="stylesheet" href="style.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Website</title>
@@ -104,60 +115,78 @@
                 </div>
             </section>
             <section class="projects section" id="projects">
-                <div class="slider-container">
-                    <div class="left-slide">
-                        <div class="project-description">
-                            <h1>Yellow Luck</h1>
-                            <p>Shinning the clouds</p>
-                        </div>
-                        <div class="project-description">
-                            <h1>Redness Lust</h1>
-                            <p>in the wilderness</p>
-                        </div>
-                        <div class="project-description">
-                            <h1>Lavanda Love</h1>
-                            <p>in the sunset</p>
-                        </div>
-                        <div
-                            class="project-description"
-                            id="project-description-chrome-extension"
-                        >
+                <div class="projects-section-header">
+                    <h1>Projects</h1>
+                </div>
+                <div class="carousel-slide">
+                    <div>test</div>
+                    <div class="carousel-item">
+                        <div class="projects-section-left">
                             <h1>E-commerce Chrome Extension</h1>
                             <p>
-                                A custom Google Chrome Extension to automate
+                                A custom Google Chrome extension to automate
                                 purchasing processes on major e-commerce
-                                websites such as Spotify, Nike and Adidas
+                                website, such as Spotify, Adidas and Nike
                             </p>
+                            <button class="button-1">View more</button>
+                        </div>
+                        <div class="projects-section-right">
+                            <img
+                                src="chromeExtension.png"
+                                style="max-width: 100%; height: auto"
+                            />
                         </div>
                     </div>
-                    <div class="right-slide">
-                        <div id="test">
-                            <img src="/chromeExtension.png" />
+                    <div class="carousel-item">
+                        <div class="projects-section-left">
+                            <h1>TEST</h1>
+                            <p>
+                                A custom Google Chrome extension to automate
+                                purchasing processes on major e-commerse
+                                website, such as Spotify, Adidas and Nike
+                            </p>
+                            <button class="button-1">View more</button>
                         </div>
-                        <div
-                            style="
-                                background-image: url('https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Zmxvd2Vyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60');
-                            "
-                        ></div>
-                        <div
-                            style="
-                                background-image: url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Zmxvd2Vyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60');
-                            "
-                        ></div>
-                        <div
-                            style="background-image: url('chromeExtension.png')"
-                            --
-                        >
-                            >
+                        <div class="projects-section-right">
+                            <img
+                                src="chromeExtension.png"
+                                style="max-width: 100%; height: auto"
+                            />
                         </div>
                     </div>
-                    <div class="action-buttons">
-                        <button class="down-button">
-                            <i class="fa-solid fa-arrow-down"></i>
-                        </button>
-                        <button class="up-button">
-                            <i class="fas fa-arrow-up"></i>
-                        </button>
+                    <div class="carousel-item">
+                        <div class="projects-section-left">
+                            <h1>TEST2</h1>
+                            <p>
+                                A custom Google Chrome extension to automate
+                                purchasing processes on major e-commerse
+                                website, such as Spotify, Adidas and Nike
+                            </p>
+                            <button class="button-1">View more</button>
+                        </div>
+                        <div class="projects-section-right">
+                            <img
+                                src="chromeExtension.png"
+                                style="max-width: 100%; height: auto"
+                            />
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="projects-section-left">
+                            <h1>TEST3</h1>
+                            <p>
+                                A custom Google Chrome extension to automate
+                                purchasing processes on major e-commerse
+                                website, such as Spotify, Adidas and Nike
+                            </p>
+                            <button class="button-1">View more</button>
+                        </div>
+                        <div class="projects-section-right">
+                            <img
+                                src="chromeExtension.png"
+                                style="max-width: 100%; height: auto"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -172,6 +201,6 @@
                 </div>
             </section>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>
-<script src="script.js"></script>

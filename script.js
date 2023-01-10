@@ -1,40 +1,31 @@
-const sliderContainer = document.querySelector(".slider-container");
-const slideRight = document.querySelector(".right-slide");
-const slideLeft = document.querySelector(".left-slide");
-const upButton = document.querySelector(".up-button");
-const downButton = document.querySelector(".down-button");
-const slidesLength = slideLeft.querySelectorAll("div").length;
-
-let activeSlideIndex = 0;
-
-slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`;
-
-upButton.addEventListener("click", () => changeSlide("up"));
-downButton.addEventListener("click", () => changeSlide("down"));
-
-const changeSlide = (direction) => {
-    const sliderHeight = sliderContainer.clientHeight;
-    if (direction === "up") {
-        activeSlideIndex++;
-        if (activeSlideIndex > slidesLength - 1) {
-            activeSlideIndex = 0;
-        }
-    } else if (direction === "down") {
-        activeSlideIndex--;
-        if (activeSlideIndex < 0) {
-            activeSlideIndex = slidesLength - 1;
-        }
-    }
-
-    slideRight.style.transform = `translateY(-${
-        activeSlideIndex * sliderHeight
-    }px)`;
-    slideLeft.style.transform = `translateY(${
-        activeSlideIndex * sliderHeight
-    }px)`;
-};
-
 function toggleMenu() {
     var element = document.getElementById("navbar-navigation");
     element.classList.toggle("collapse");
 }
+
+$(document).ready(function () {
+    // Activate Carousel
+    $(".carousel").carousel({ interval: 2000 });
+
+    // Enable Carousel Indicators
+    // $(".item1").click(function () {
+    //     $("#carousel-slide").carousel(0);
+    // });
+    // $(".item2").click(function () {
+    //     $("#carousel-slide").carousel(1);
+    // });
+    // $(".item3").click(function () {
+    //     $("#carousel-slide").carousel(2);
+    // });
+    // $(".item4").click(function () {
+    //     $("#carousel-slide").carousel(3);
+    // });
+
+    // Enable Carousel Controls
+    $(".left").click(function () {
+        $(".carousel").carousel("prev");
+    });
+    $(".right").click(function () {
+        $(".carousel").carousel("next");
+    });
+});
