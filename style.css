@@ -194,29 +194,49 @@ html {
     color: #666aaf;
 }
 
-.home-right h1 {
+.home-right h1,
+.home-right h2,
+h3 {
     font-family: montserrat-extrabold;
     color: #ffffff;
     font-size: 70px;
-    opacity: 0;
-    animation: show 0.1s forwards, pop-word 6s forwards;
-    animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
-    transform: rotateX(120deg);
-    transform-origin: 50% 100%;
+    animation: 3s anim-lineUp ease-out;
 }
 
-@keyframes pop-word {
-    to {
-        transform: rotateX(0);
+.home-right h1 {
+    animation: 2s bounce ease infinite;
+}
+
+@keyframes bounce {
+    25% {
+        transform: translateY(10%);
     }
+    /* 50% {
+        transform: translateY(0%);
+    } */
 }
 
-@keyframes show {
-    to {
+#viewProjects {
+    animation: 3s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
         opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
     }
 }
-
 .home-right h2 {
     font-family: montserrat-semibold;
     color: rgb(223, 223, 223);
@@ -436,6 +456,24 @@ html {
     display: table;
 }
 
+.experience-section-header {
+    padding-left: 10vw;
+    width: 100vw;
+    height: 10vh;
+    display: table;
+}
+
+.experience-section-header h1 {
+    font-family: montserrat-extrabold;
+    color: white;
+    font-size: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.experience-section.container {
+    height: 90vh;
+}
+
 .projects-section-header h1 {
     display: table-cell;
     vertical-align: middle;
@@ -454,7 +492,7 @@ html {
 }
 
 .carousel-item {
-    transition: transform 0.3s ease, opacity 0.5s ease-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 1000px) {
