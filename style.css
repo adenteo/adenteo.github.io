@@ -472,17 +472,19 @@ html {
     }
 
     .projects-section-left {
-        height: 25vh;
+        height: 30vh;
         width: 80vw;
         text-align: center;
+        border: 1px solid white;
     }
 
     .projects-section-right {
-        height: 75vh;
+        height: 70vh;
         width: 80vw;
         margin: 0;
         padding: 3%;
         padding-top: 20%;
+        border: 1px solid white;
     }
     .projects-section-left h1 {
         font-family: montserrat;
