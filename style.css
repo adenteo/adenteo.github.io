@@ -472,6 +472,7 @@ html {
     }
 
     .projects-section-left {
+        padding-top: 5vh;
         height: 30vh;
         width: 80vw;
         text-align: center;
