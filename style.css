@@ -62,20 +62,12 @@ html {
     flex-direction: column;
 }
 
-.navbar-top #home :hover {
-    fill: #666aaf;
+#navbar-name:hover {
+    color: rgb(160, 160, 160);
 }
-.navbar-top #projects :hover {
-    fill: #666aaf;
-}
-.navbar-top #contact :hover {
-    fill: #666aaf;
-}
-.navbar-bottom #linkedin :hover {
-    fill: #666aaf;
-}
-.navbar-bottom #github :hover {
-    fill: #666aaf;
+
+.navbar-item a:hover {
+    color: rgb(160, 160, 160);
 }
 
 .navbar-bottom {
@@ -87,6 +79,14 @@ html {
 .navbar svg {
     padding: 10px;
     fill: white;
+}
+
+.navbar-logo:hover {
+    fill: rgb(160, 160, 160);
+}
+
+.navbar-navigation-menu:hover {
+    fill: rgb(160, 160, 160);
 }
 
 .header {
