@@ -366,7 +366,6 @@ html {
 
 /* CSS */
 .button-1 {
-    margin-top: 4%;
     font-family: montserrat-semibold;
     font-size: 20px;
     text-decoration: none;
@@ -392,46 +391,36 @@ html {
     left: 5px;
 }
 
-/* #projects {
-    justify-content: start;
-    align-items: flex-start;
-} */
-
-/* .carousel-slide {
-    width: 100vw;
-    white-space: nowrap;
-    justify-content: center;
-}
-
-.carousel-item {
-    display: inline-flex;
-    align-items: center;
-    height: 90vh;
-    width: 85vw;
-    white-space: normal;
-    margin-left: 7.5vw;
-    margin-right: 7.5vw;
-} */
-
 .projects-section-left {
+    position: relative;
     width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3%;
 }
 
 .projects-section-left h1 {
     font-family: montserrat;
     color: rgb(214, 214, 214);
+    font-size: 2vw;
 }
 
 .projects-section-left p {
     font-family: montserrat-thin;
-    font-size: 1.5vw;
+    font-size: 1vw;
     line-height: 2em;
     color: white;
 }
 
 .projects-section-right {
+    display: flex;
     width: 70%;
-    margin-left: 4vw;
+    height: 100%;
+    align-items: center;
+    padding: 3%;
+    justify-content: center;
 }
 
 .projects-section-header h1 {
@@ -456,7 +445,8 @@ html {
     display: flex;
     height: 90vh;
     align-items: center;
-    padding: 10%;
+    width: 90vw;
+    margin: auto;
 }
 
 #carousel-container {
@@ -517,5 +507,5 @@ html {
 
 .carousel-control-next,
 .carousel-control-prev {
-    width: 5%;
+    width: 7%;
 }
