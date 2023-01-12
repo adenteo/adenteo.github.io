@@ -56,6 +56,10 @@ html {
     src: url(./fonts/FiraMono-Regular.ttf);
 }
 
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(./fonts//Montserrat-Regular.ttf);
+}
 .navbar-top {
     /* border: 1px solid pink; */
     display: flex;
@@ -244,7 +248,7 @@ h3 {
 }
 
 .home-right h3 {
-    font-family: montserrat-thin;
+    font-family: Montserrat-Regular;
     color: rgb(223, 223, 223);
     font-size: 18px;
     line-height: 1.75em;
@@ -428,7 +432,7 @@ h3 {
 }
 
 .projects-section-left p {
-    font-family: montserrat-thin;
+    font-family: Montserrat-Regular;
     font-size: 1vw;
     line-height: 2em;
     color: white;
