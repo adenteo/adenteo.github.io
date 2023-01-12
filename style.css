@@ -552,3 +552,35 @@ h3 {
 .carousel-control-prev {
     width: 7%;
 }
+
+.cInnerContent {
+    width: 85vw;
+    text-align: center;
+    padding: 2%;
+}
+
+.card {
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: #333333;
+}
+
+.card h1 {
+    font-family: montserrat-extraBold;
+    color: white;
+}
+
+.card-components img {
+    width: calc(2.5rem + 1.5vw);
+}
+
+.card-components p {
+    font-family: Montserrat-Regular;
+    color: white;
+}
+
+#fiverr-date {
+    font-style: italic;
+}
