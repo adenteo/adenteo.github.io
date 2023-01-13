@@ -539,6 +539,18 @@ h3 {
         line-height: 2em;
         color: white;
     }
+
+    .card h1 {
+        font-size: 1rem;
+    }
+
+    .card-components img {
+        width: calc(1.5rem + 1vw);
+    }
+
+    .card-components p {
+        font-size: 0.8rem;
+    }
 }
 
 @media (min-width: 576px) {
@@ -554,7 +566,7 @@ h3 {
 }
 
 .cInnerContent {
-    width: 85vw;
+    width: 80vw;
     text-align: center;
     padding: 2%;
 }
@@ -583,4 +595,9 @@ h3 {
 
 #fiverr-date {
     font-style: italic;
+}
+
+#experience {
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
