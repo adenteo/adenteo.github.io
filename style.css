@@ -156,10 +156,6 @@ html {
     cursor: pointer;
 }
 
-#contact {
-    background-color: rgb(26, 26, 26);
-}
-
 .home-container {
     display: flex;
     width: 90vw;
@@ -204,7 +200,6 @@ h3 {
     font-family: montserrat-extrabold;
     color: #ffffff;
     font-size: 70px;
-    animation: 3s anim-lineUp ease-out;
 }
 
 .home-right h1 {
@@ -220,27 +215,6 @@ h3 {
     } */
 }
 
-#viewProjects {
-    animation: 3s anim-lineUp ease-out;
-}
-
-@keyframes anim-lineUp {
-    0% {
-        opacity: 0;
-        transform: translateY(80%);
-    }
-    20% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
 .home-right h2 {
     font-family: montserrat-semibold;
     color: rgb(223, 223, 223);
@@ -261,7 +235,7 @@ h3 {
 .main-shadow {
     position: absolute;
     width: 100vw;
-    height: 9000px;
+    height: calc(100vh * 4);
     opacity: 0.1;
     background: #5653e8;
     background: linear-gradient(
@@ -605,4 +579,40 @@ h3 {
 
 .card-components {
     padding: 1%;
+}
+
+.acknowledgements {
+    font-size: 1px;
+}
+
+.contact-container.container {
+    width: 85vw;
+    text-align: center;
+    background-color: #333333;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 2%;
+    border-radius: 25px;
+}
+
+.contact-section-header {
+    font-family: Montserrat-extraBold;
+    color: white;
+}
+
+.contact-details {
+    font-family: Montserrat-semiBold;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    white-space: nowrap;
+}
+
+.contact-details i {
+    padding: 1%;
+}
+
+.contact-details i:hover {
+    color: rgb(148, 148, 148);
+    cursor: pointer;
 }
