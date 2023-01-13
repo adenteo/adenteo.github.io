@@ -4,6 +4,7 @@ function toggleMenu() {
 }
 
 $(document).ready(function () {
+    AOS.init();
     // Activate Carousel
     $(".carousel").carousel({ interval: false });
 
