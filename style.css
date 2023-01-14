@@ -719,3 +719,10 @@ h3 {
 
 
 }
+
+
+#resume-button {
+    font-family: Montserrat-Regular;
+    color: rgb(185, 185, 185);
+    margin-left: 3%;
+}
