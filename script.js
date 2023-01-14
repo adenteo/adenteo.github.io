@@ -6,7 +6,7 @@ function toggleMenu() {
 $(document).ready(function () {
   AOS.init();
   // Activate Carousel
-  $(".carousel").carousel({ interval: false, wrap: false });
+  $(".carousel").carousel({ interval: false });
 
   $(".left").click(function () {
     $(".carousel").carousel("prev");
