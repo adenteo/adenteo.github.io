@@ -651,3 +651,22 @@ h3 {
     font-family: Montserrat-extraBold;
 }
 
+.return-top {
+    position: fixed;
+    z-index: 999;
+    left: 90%;
+    top: 90%;
+}
+
+.return-top i {
+    font-size: 2em;
+    color: rgb(241, 241, 241);
+}
+
+#return-top-button {
+    opacity: 0.5;
+}
+
+#return-top-button:hover {
+    opacity: 1;
+}
