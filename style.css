@@ -591,17 +591,19 @@ h3 {
     border-radius: 25px;
 }
 
-.contact-section-header {
-    font-family: Montserrat-extraBold;
-    color: white;
+.contact-header {
+    font-family: Montserrat-Regular;
+    color: rgb(157, 157, 157);
 }
 
 .contact-details {
     font-family: Montserrat-semiBold;
     display: flex;
-    flex-direction: column;
     color: white;
     white-space: nowrap;
+    justify-content: space-evenly;
+    padding: 2%;
+
 }
 
 .contact-details i {
@@ -611,6 +613,10 @@ h3 {
 .contact-details i:hover {
     color: rgb(148, 148, 148);
     cursor: pointer;
+}
+
+.contact-items i {
+    font-size: 5rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -624,4 +630,24 @@ h3 {
     .contact-container.container {
         padding: 5%;
     }
+    .contact-items i {
+        font-size: 3rem;
+    }
 }
+
+
+.contact-section-header {
+    padding-left: 10vw;
+    width: 100vw;
+    height: 10vh;
+    display: table;
+}
+
+.contact-section-header h1 {
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-family: Montserrat-extraBold;
+}
+
