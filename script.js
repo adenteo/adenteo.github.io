@@ -1,6 +1,19 @@
 function toggleMenu() {
   var element = document.getElementById("navbar-navigation");
   element.classList.toggle("collapse");
+  var menu = document.getElementById("navbar-navigation-menu");
+  var icon = document.getElementById("navbar-navigation-menu-cross");
+  icon.style.display = "block";
+  menu.style.display = "none";
+}
+
+function closeMenu() {
+  var element = document.getElementById("navbar-navigation");
+  element.classList.toggle("collapse");
+  var menu = document.getElementById("navbar-navigation-menu");
+  var icon = document.getElementById("navbar-navigation-menu-cross");
+  icon.style.display = "none";
+  menu.style.display = "block";
 }
 
 $(document).ready(function () {

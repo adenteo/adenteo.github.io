@@ -298,13 +298,14 @@ h3 {
     .navbar-navigation-menu {
         z-index: 2;
         position: absolute;
-        right: 2rem;
+        right: 0.5rem;
         width: 20px;
         fill: white;
         cursor: pointer;
-        margin-top: 2vh;
+        margin-top: 3vh;
     }
 
+  
     /* .navbar-logos {
         display: none;
     } */
@@ -739,4 +740,7 @@ h3 {
 }
 
 
-
+#navbar-navigation-menu-cross {
+    margin-top: 2.5vh;
+    display: none;
+}
